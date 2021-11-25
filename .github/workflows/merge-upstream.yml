@@ -14,7 +14,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          ref: master             # set the branch to merge to
+          ref: main             # set the branch to merge to
           fetch-depth: 0 
       - name: Merge Upstream - master
         uses: Cubik65536/merge-upstream@v1.1.3
