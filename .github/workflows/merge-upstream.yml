@@ -5,7 +5,7 @@ on:
       - main
   schedule:
     - cron: '0 * * * *'
-    # scheduled for every Hour
+    # scheduled for every hour
 
 jobs:
   merge-upstream:
@@ -19,6 +19,6 @@ jobs:
       - name: Merge Upstream - master
         uses: Cubik65536/merge-upstream@v1.1.3
         with:
-          upstream: CubikLab/fa-lang-doc-demo # set the upstream repo
+          upstream: fa-org/fa-docs # set the upstream repo
           upstream-branch: main   # set the upstream branch to merge from
           branch: main            # set the branch to merge to
